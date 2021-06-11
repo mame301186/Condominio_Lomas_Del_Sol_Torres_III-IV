@@ -1,0 +1,240 @@
+        header {
+            background-color: #FFFF5C;
+        }
+        
+        #logo_nav-bar {
+            vertical-align: middle;
+            margin-bottom: 20px;
+            margin-left: 15px;
+        }
+        
+        #alias_name {
+            font-size: 1.60rem;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        #barra_navegacion {
+            font-size: 1.1rem;
+            font-style: oblique;
+            font-weight: 600;
+        }
+        
+        .proyectos {
+            margin-right: 100px;
+            margin-left: 100px;
+            text-align: center;
+        }
+        
+        #boton_navegador {
+            background-color: #F1F1D7;
+            position: absolute;
+            right: 30px;
+        }
+        
+        #titulo {
+            text-align: center;
+            font-size: 2.5rem;
+            padding-top: 15px;
+        }
+        
+        #titulo>p {
+            font-size: 1.2rem;
+            font-style: oblique;
+        }
+        
+        #seccion-1 {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #445BD3;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        
+        #seccion-1 .card {
+            height: 237px;
+            border: 2px solid #445BD3;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+        
+        .descripcion-cuota {
+            text-align: justify;
+        }
+        
+        #seccion-1 .btn {
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+            border-radius: 15px;
+        }
+        
+        #seccion-2 {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        #seccion-2 .card {
+            height: 237px;
+            border: 2px solid #445BD3;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+        
+        #seccion-2 .btn {
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+            border-radius: 15px;
+        }
+        
+        h4 {
+            font-size: 1.1rem;
+            text-align: justify;
+            color: black;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        
+        #popover-formas-pago {
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 359px) {
+            #boton_navegador {
+                position: static;
+                margin-left: 120px;
+                margin-right: auto;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width:767px) {
+            #barra_navegacion {
+                background-color: #F1F1D7;
+                text-align: left;
+                margin-left: -15px;
+                margin-right: -13px;
+                margin-bottom: -10px;
+                padding-left: 40px;
+            }
+            #menu-desplegable-navbar {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        
+        @media (min-width: 901px) and (max-width: 991px) {
+            #cuotas-agua {
+                margin-top: 15px;
+                position: relative;
+                left: 220px;
+            }
+            #seccion-1 .card {
+                height: 200px;
+            }
+            #seccion-2 .card {
+                height: 200px;
+            }
+            #formas-pago {
+                margin-top: 15px;
+                position: relative;
+                left: 220px;
+            }
+            #seccion-2 #popover-formas-pago {
+                right: 20px;
+                bottom: 80px;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width:900px) {
+            #cuotas-agua {
+                margin-top: 15px;
+                position: relative;
+                left: 170px;
+            }
+            #seccion-1 .card {
+                height: 200px;
+            }
+            #formas-pago {
+                margin-top: 15px;
+                position: relative;
+                left: 170px;
+            }
+            #seccion-2 .card {
+                height: 200px;
+            }
+            #seccion-2 #card-formas-pago {
+                height: 220px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            #seccion-1 .card {
+                height: 200px;
+                margin-top: 15px;
+                margin-right: 18px;
+            }
+            #seccion-2 .card {
+                height: 200px;
+                margin-top: 15px;
+                margin-right: 18px;
+            }
+        }
+        
+        @media (max-width: 545px) {
+            #seccion-2 #popover-formas-pago {
+                right: 20px;
+                bottom: 100px;
+            }
+        }
+        
+        @media (max-width: 450px) {
+            #seccion-1 .card {
+                height: 220px;
+            }
+            #seccion-2 .card {
+                height: 220px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            #seccion-1 .card {
+                height: 280px;
+            }
+            #seccion-2 .card {
+                height: 280px;
+            }
+            #seccion-2 #popover-formas-pago {
+                right: 8px;
+                bottom: 8px;
+            }
+        }
+        
+        @media (max-width: 300px) {
+            #seccion-1 .card {
+                height: 350px;
+            }
+            #seccion-2 .card {
+                height: 350px;
+            }
+        }
