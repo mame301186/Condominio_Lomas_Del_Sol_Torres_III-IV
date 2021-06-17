@@ -1,0 +1,153 @@
+/*Styles of Navigation Bar and head of the page*/
+
+header {
+    background-color: #FFFF5C;
+}
+
+#logo_nav-bar {
+    vertical-align: middle;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#alias_name {
+    font-size: 1.60rem;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#barra_navegacion {
+    font-size: 1.1rem;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.proyectos {
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+#boton_navegador {
+    background-color: #F1F1D7;
+    position: absolute;
+    right: 30px;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#seccion_1-pagos-extraordinarios>.container {
+    padding: 10px 10px 0px 10px;
+    width: 40%;
+}
+
+#boton_selector {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+
+/*Styles of ordinary cuotes Tables*/
+
+#seccion_2-pagos-extraordinarios>#container-tabla-extraordinarios {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#insert-snippet {
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+tr {
+    border-top: black solid thin;
+    border-bottom: black solid thin;
+    line-height: 40px;
+}
+
+td {
+    font-weight: 600;
+}
+
+#encabezado_tabla {
+    background-color: rgb(43, 39, 39);
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#style_tabla_1 {
+    background-color: #F1F1D7;
+}
+
+#boton_regresar {
+    margin: 10px 10px 30px 30px;
+}
+
+
+/*Styles of footer page*/
+
+footer {
+    margin-top: 15px;
+    background-color: #FFFF5C;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .title-footer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+footer .body-footer {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/****MEDIA QUERIES****/
+
+
+/*Setting of navigation button*/
+
+@media (max-width: 359px) {
+    #boton_navegador {
+        position: static;
+        margin-left: 120px;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*Setting of navigation bar*/
+
+@media (max-width:767px) {
+    #barra_navegacion {
+        background-color: #F1F1D7;
+        text-align: left;
+        margin-left: -15px;
+        margin-right: -13px;
+        margin-bottom: -10px;
+        padding-left: 40px;
+    }
+    #menu-desplegable-navbar {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

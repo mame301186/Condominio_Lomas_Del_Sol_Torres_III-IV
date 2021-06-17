@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="es-419">
 
 <head>
@@ -16,9 +15,12 @@
 
     <!-- build:css css/index.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/control_pagos.css">
+
 
     <title>CONJUNTO RESIDENCIAL LOMAS DEL SOL</title>
+
 </head>
 
 <body>
@@ -28,21 +30,22 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img id="logo_nav-bar" src="images/icono_nuevo_lomas.png" alt="Logo" height="40px">
-                    <span id="alias_name">Lomas del Sol</span>
-                </a>
+                    <span id="alias_name">Lomas del Sol</span></a>
                 <button id="boton_navegador" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra_navegacion" aria-controls="barra_navegacion" aria-expanded="false" aria-label="barra_navegacion_colapsable">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="barra_navegacion">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="about.html">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Proyectos
+                            </a>
                             <ul id="menu-desplegable-navbar" class="dropdown-menu proyectos" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item " href="pozo.html">Pozo de Agua</a>
                                 </li>
@@ -69,59 +72,57 @@
     <!--Code of main title (outside of header)-->
     <div id="titulo" class="container-fluid">
         <h1>Conjunto Residencial Lomas Del Sol</h1>
-        <p>Bienvenidos al sitio web de las Torres III y IV</p>
+        <p>Registro De Pagos Para Cuotas Ordinarias </p>
     </div>
 
-    <!--Code of carrousel (pictures motion of the Lomas)-->
-
-    <section id="section1_about">
+    <section id="seccion_1-pagos-ordinarios">
         <div class="container">
-            <div id="carousel_Fade_about" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_Fade_about" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel_Fade_about" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-            </div>
-        </div>
-    </section>
-    <section id="section2_about">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Nosotros</h2>
-                    <p>Formamos parte de un Conjunto Residencial que fue fundado en la primera década del siglo XXI. Estamos ubicados en la Calle 80, entre las Avenidas 76 y 78A, en el Sector La Macandona, Parroquia Raúl Leoni, Municipio Maracaibo, Estado
-                        Zulia, Venezuela. Como puntos de referencia, estamos ubicados al lado del Conjunto Residencial las Tunas, diagonal al esblecimiento comercial Villas Carnes. Nuestra administración se encuentra conformada por las torres III y IV,
-                        siendo un total de 15 co-propietarios. es importante resaltar que las residencias cuentan con áreas verdes y un pozo de agua funcional para el autoabastecimiento.</p>
-                </div>
-                <div class="col">
-                    <a href="https://www.google.com/maps/place/Conjunto+Residencial+Lomas+Del+Sol/@10.6745615,-71.6708689,17z/data=!3m1!4b1!4m5!3m4!1s0x8e899be03fb5b87f:0x8a0a6366432125f8!8m2!3d10.6745615!4d-71.6686802?hl=es#:~:text=%3Ciframe%20src%3D%22https,loading%3D%22lazy%22%3E%3C/iframe%3E"
-                        target="_blank"></a>
-                    <div id="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.7750450267354!2d-71.67086888520014!3d10.674561492390728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e899be03fb5b87f%3A0x8a0a6366432125f8!2sConjunto%20Residencial%20Lomas%20Del%20Sol!5e0!3m2!1ses!2sve!4v1623878105354!5m2!1ses!2sve"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
+            <select id="apto_seleccionado" class="form-select" aria-label="Default select example">
+                <option selected>Buscar Apartamento</option>
+                <option value="1">T3-PBA</option>
+                <option value="2">T3-PBB</option>
+                <option value="3">T3-PBC</option>
+                <option value="4">T3-PBD</option>
+                <option value="5">T3-P1A</option>
+                <option value="6">T3-P1B</option>
+                <option value="7">T3-P1C</option>
+                <option value="8">T3-P1D</option>
+                <option value="9">T3-P2A</option>
+                <option value="10">T3-P2B</option>
+                <option value="11">T3-P2C</option>
+                <option value="12">T3-P2D</option>
+                <option value="13">T3-P3A</option>
+                <option value="14">T3-P3B</option>
+                <option value="15">T3-P3C</option>
+                <option value="16">T3-P3D</option>
+                <option value="17">T4-PBA</option>
+                <option value="18">T4-PBB</option>
+                <option value="19">T4-PBC</option>
+                <option value="20">T4-PBD</option>
+                <option value="21">T4-P1A</option>
+                <option value="22">T4-P1B</option>
+                <option value="23">T4-P1C</option>
+                <option value="24">T4-P1D</option>
+                <option value="25">T4-P2A</option>
+                <option value="26">T4-P2B</option>
+                <option value="27">T4-P2C</option>
+                <option value="28">T4-P2D</option>
+                <option value="29">T4-P3A</option>
+                <option value="30">T4-P3B</option>
+                <option value="31">T4-P3C</option>
+                <option value="32">T4-P3D</option>
+            </select>
+            <button type="submit" onclick="MostrarCuotasOrdinarias();" id="boton_selector" class="btn btn-primary" data-bs-target="#apto_seleccionado">Buscar
         </div>
     </section>
 
-
-
+    <section id="seccion_2-pagos-ordinarios">
+        <div id="container-tabla-ordinaria" class="container">
+            <a id="boton_regresar" type="button"  class="btn btn-danger" href="index.html" >Regresar a página principal
+            </a>
+            <table id="insert-snippet"></table>
+        </div>
+    </section>
 
     <!--code of footer-->
     <footer>
@@ -139,6 +140,9 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/Ajax_component.js" ></script>
+    <script src="js/control_pagos.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

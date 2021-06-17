@@ -119,6 +119,29 @@
             font-weight: 700;
         }
         
+        footer {
+            margin-top: 15px;
+            background-color: #FFFF5C;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        
+        footer .title-footer {
+            font-size: 1rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 5px;
+        }
+        
+        footer .body-footer {
+            margin-bottom: 5px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
         @media (max-width: 359px) {
             #boton_navegador {
                 position: static;

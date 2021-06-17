@@ -1,0 +1,200 @@
+/*Styles of Navigation Bar and head of the page*/
+
+header {
+    background-color: #FFFF5C;
+}
+
+#logo_nav-bar {
+    vertical-align: middle;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#alias_name {
+    font-size: 1.60rem;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#barra_navegacion {
+    font-size: 1.1rem;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.proyectos {
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+#boton_navegador {
+    background-color: #F1F1D7;
+    position: absolute;
+    right: 30px;
+}
+
+
+/**Styles for tittle page**/
+
+#titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 15px;
+}
+
+#titulo>p {
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+
+
+/**Styles of Form elements**/
+
+input {
+    text-align: justify;
+    border: solid 0.5px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: 1px 1px 1px 1px;
+}
+
+label {
+    font-weight: 600;
+    text-align: justify;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#seccion-1-contacts {
+    margin-top: 50px;
+    border: 2.5px solid #2C2F36;
+    border-radius: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+    background-color: #E0E1D1;
+    position: relative;
+    left: 200px;
+}
+
+#contact-form {
+    padding: 20px 20px 20px 20px;
+}
+
+.form-group {
+    padding: 1.5px 1.5px 1.5px 1.5px;
+}
+
+.form-control {
+    border: 2px solid #3535F7;
+}
+
+.form-check {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#boton_formulario {
+    position: relative;
+    left: 260px;
+}
+
+
+/*Styles of footer page*/
+
+footer {
+    margin-top: 15px;
+    background-color: #FFFF5C;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .title-footer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+footer .body-footer {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/****MEDIA QUERIES****/
+
+
+/*Setting of navigation button*/
+
+@media (max-width: 359px) {
+    #boton_navegador {
+        position: static;
+        margin-left: 120px;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*Setting of navigation bar*/
+
+@media (max-width:767px) {
+    #barra_navegacion {
+        background-color: #F1F1D7;
+        text-align: left;
+        margin-left: -15px;
+        margin-right: -13px;
+        margin-bottom: -10px;
+        padding-left: 40px;
+    }
+    #menu-desplegable-navbar {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+/*Setting of #seccion-1-contacts*/
+
+@media (max-width: 991px) {
+    #seccion-1-contacts {
+        position: relative;
+        left: 100px;
+    }
+    #boton_formulario {
+        position: relative;
+        left: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    #seccion-1-contacts {
+        position: relative;
+        left: 50px;
+    }
+    #boton_formulario {
+        position: relative;
+        left: 80px;
+    }
+}
+
+@media (max-width: 530px) {
+    #seccion-1-contacts {
+        position: relative;
+        left: 10px;
+    }
+    #boton_formulario {
+        position: relative;
+        left: 30px;
+    }
+}
