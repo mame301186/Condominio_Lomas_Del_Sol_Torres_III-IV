@@ -16,6 +16,7 @@
 
     <!-- build:css css/index.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="css/contacts.css">
 
     <title>CONJUNTO RESIDENCIAL LOMAS DEL SOL</title>
@@ -26,7 +27,7 @@
         <!--Code of Navigation Bar Setting-->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img id="logo_nav-bar" src="images/icono_nuevo_lomas.png" alt="Logo" height="40px">
                     <span id="alias_name">Lomas del Sol</span>
                 </a>
@@ -77,31 +78,31 @@
             <div class="form-row">
                 <div class="form-group col-sm-12 ">
                     <label for="user_name">Nombre completo</label>
-                    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Ingrese sus nombres">
+                    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Ingrese sus nombres" required aria-required="true">
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="user_lastName">Apellido completo</label>
-                    <input type="text" class="form-control" id="user_lastName" name="user_lastName" placeholder="Ingrese sus apellidos">
+                    <input type="text" class="form-control" id="user_lastName" name="user_lastName" placeholder="Ingrese sus apellidos" required aria-required="true">
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="code_country">Código de país</label>
-                    <input type="tel" class="form-control" id="code_country" name="code_country" placeholder="Venezuela (58)">
+                    <input type="tel" class="form-control" id="code_country" name="code_country" placeholder="Venezuela (58)" required aria-required="true">
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="code_oper">Código de operadora</label>
-                    <input type="tel" class="form-control" id="code_oper" name="code_oper" placeholder=" Movistar (424)">
+                    <input type="tel" class="form-control" id="code_oper" name="code_oper" placeholder=" Movistar (424)" required aria-required="true">
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="phone">Número telefónico</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Sin separadores (7 digitos)">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Sin separadores (7 digitos)" required aria-required="true">
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required aria-required="true">
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="visit_userType">Condición del visitante</label>
-                    <select class="form-control" id="visit_userType" name="visit_userType">
+                    <select class="form-control" id="visit_userType" name="visit_userType" required aria-required="true">
             <option>Propietario</option>
             <option>Inquilino</option>
             <option>Persona externa</option>
@@ -109,7 +110,7 @@
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="torre">Torre</label>
-                    <select class="form-control" id="torre" name="torre">
+                    <select class="form-control" id="torre" name="torre" required aria-required="true">
             <option>Torre I</option>
             <option>Torre II</option>
             <option>Torre III</option>
@@ -121,7 +122,7 @@
                 </div>
                 <div class="form-group col-sm-12">
                     <label for="Apto">Apartamento</label>
-                    <select class="form-control" id="Apto" name="Apto">
+                    <select class="form-control" id="Apto" name="Apto" required aria-required="true">
             <option>PB-A</option>
             <option>PB-B</option>
             <option>PB-C</option>
@@ -144,7 +145,7 @@
             </div>
             <div class="form-group">
                 <label for="comentario">Comentario</label>
-                <textarea type="textarea" name="comentario" id="comentario" class="form-control" rows="5" placeholder="Escribe tu comentario aquí"></textarea>
+                <textarea type="textarea" name="comentario" id="comentario" class="form-control" rows="5" placeholder="Escribe tu comentario aquí" required aria-required="true"></textarea>
             </div>
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="check-box" name="check-box">
@@ -153,12 +154,6 @@
             <button id="boton_formulario" type="submit" class="btn btn-primary" value="Send">Enviar formulario</button>
         </form>
     </section>
-    <div id="notificacionCorreo" class="alert alert-success d-flex align-items-center" role="alert">
-        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
-        <div>
-            El mensaje ha sido enviado con éxito
-        </div>
-    </div>
     <!--
     <form id="contact-form">
         <input type="hidden" name="contact_number">
@@ -175,12 +170,16 @@
     <!--code of footer-->
     <footer>
         <div class="container-fluid">
-            <p class="title-footer">Dirección</p>
-            <p class="body-footer">Calle 80, entre Av. 12 y 11, Sector La Macandona, Parroquia Raúl Leoni, Maracaibo, Venezuela. Estamos ubicados al lado del Conjunto Residencial las Tunas</p>
-            <p class="title-footer">Teléfonos</p>
-            <p class="body-footer">+58-(412)1676760</p>
-            <p class="title-footer">Correo electrónico</p>
-            <p class="body-footer">lomasdelsol@gmail.com</p>
+            <address>
+              <p class="title-footer">Dirección</p>
+              <p class="body-footer">Calle 80, entre Av. 12 y 11, Sector La Macandona, Parroquia Raúl Leoni, Maracaibo, Venezuela. Estamos ubicados al lado del Conjunto Residencial las Tunas</p>
+              <p class="title-footer">Teléfonos</p>
+              <p class="body-footer">+58-(412)1676760</p>
+              <p class="title-footer">Correo electrónico</p>
+              <p class="body-footer">lomasdelsol@gmail.com</p>
+            </address>
+            <a id="copyright" title="email: marquezm1986@gmail.com">&copy; 2021 Miguel Marquez</a>
+
         </div>
     </footer>
 
@@ -189,6 +188,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="js/contacts.js"></script>
 </body>
 

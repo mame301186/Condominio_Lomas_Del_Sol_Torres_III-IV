@@ -45,6 +45,56 @@ header {
     font-style: oblique;
 }
 
+#container-carousel {
+    width: 100%;
+}
+
+#titulo>p {
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+
+#section1_about {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#section2_about {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.col>p {
+    text-align: justify;
+}
+
+#mapa {
+    position: relative;
+    overflow: hidden;
+    border: solid 2px rgb(185, 178, 178);
+}
+
+#mapa>inframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#container-carousel {
+    border: 2px solid rgb(185, 178, 178);
+    padding: 0px 0px 0px 0px;
+    width: 80%;
+}
+
 
 /*Styles of footer page*/
 
@@ -56,7 +106,6 @@ footer {
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
-    bottom: 0;
     width: 100%;
 }
 
@@ -71,6 +120,12 @@ footer .body-footer {
     margin-bottom: 5px;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+#copyright {
+    color: blue;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
 
@@ -103,5 +158,21 @@ footer .body-footer {
     #menu-desplegable-navbar {
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+
+
+/*Setting of map*/
+
+@media (max-width:991px) {
+    #mapa {
+        text-align: center;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    #mapa {
+        width: 600px;
+        left: 8%;
     }
 }

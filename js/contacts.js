@@ -14,7 +14,28 @@ window.onload = function() {
                 console.log('FAILED...', error);
             });
     });
+
+
+
+    var botonFormulario = document.querySelector('#boton_formulario');
+
+    function alertButton() {
+        Swal.fire({
+            icon: 'success',
+            iconColor: '#06DD09',
+            title: 'Su mensaje fue enviado',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#0059E1'
+
+        });
+    }
+
+    botonFormulario.addEventListener('click', alertButton, false);
+
 }
+
+
+
 
 
 
