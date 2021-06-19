@@ -15,24 +15,39 @@ window.onload = function() {
             });
     });
 
-
-
-    var botonFormulario = document.querySelector('#boton_formulario');
-
-    function alertButton() {
-        Swal.fire({
-            icon: 'success',
-            iconColor: '#06DD09',
-            title: 'Su mensaje fue enviado',
-            confirmButtonText: 'Aceptar',
-            confirmButtonColor: '#0059E1'
-
-        });
-    }
-
-    botonFormulario.addEventListener('click', alertButton, false);
-
 }
+
+var input = document.querySelector("input");
+
+var button = document.querySelector("#boton_formulario");
+
+button.disabled = true;
+
+input.addEventListener("change", stateHandle);
+
+function stateHandle() {
+    if (document.querySelector("input").value === "") {
+        button.disabled = true;
+    } else {
+        button.disabled = false;
+    }
+}
+
+var botonFormulario = document.querySelector('#boton_formulario');
+
+function alertButton() {
+    Swal.fire({
+        icon: 'success',
+        iconColor: '#06DD09',
+        title: 'Su mensaje fue enviado',
+        confirmButtonText: 'Aceptar',
+        confirmButtonColor: '#0059E1'
+
+    });
+}
+
+botonFormulario.addEventListener('click', alertButton, false);
+
 
 
 
